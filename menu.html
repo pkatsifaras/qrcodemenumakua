@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Macua Menu Therma Ikarias</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #000;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        header img {
+            max-width: 500px;
+        }
+        nav {
+            background-color: #444;
+            padding: 10px;
+            text-align: center;
+            display: inline-block;
+            position: -webkit-sticky; /* For Safari */
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav.lang {
+            background-color: #000;
+        }
+        nav a {
+            float: left;
+            color: #fff;
+            margin: 3px 5px;
+            padding: 5px;
+            text-decoration: none;
+            border: 1px solid #fff;
+            border-radius: 5px;
+            
+        }
+        section {
+            padding: 20px;
+        }
+        h2 {
+            border-bottom: 2px solid #333;
+            padding-bottom: 10px;
+        }
+        .dish {
+            margin: 20px 0;
+        }
+        .dish h3 {
+            margin: 0 0 5px;
+        }
+        .dish p {
+            margin: 5px 0;
+            text-transform: lowercase;
+        }
+        .price {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="makua_logo_black.png" width="80%">
+        <h1>MENU</h1>
+        <nav class="lang">
+            <a href="/">Ελληνικά</a>
+            <a href="/en">English</a>
+        </nav>
+    </header>
+    <nav>
+        <a href="#breakfast">ΠΡΩΙΝΟ/BRUNCH</a>
+        <a href="#baquette">ΜΠΑΓΚΕΤΕΣ/ΤΣΙΑΠΑΤΕΣ</a>
+        <a href="#baobuns">BAO BUNS</a>
+        <a href="#salads">ΣΑΛΑΤΕΣ</a>
+        <a href="#bruschetta">ΜΠΡΟΥΣΚΕΤΕΣ</a>
+        <a href="#makuaplates">ΠΙΑΤΑ MAKUA</a>
+        <a href="#sandwiches">ΑΜΦΙΨΩΜΑ/ΣΑΝΤΟΥΙΤΣ</a>
+        <a href="#pasta">ΖΥΜΑΡΙΚΑ</a>
+        <a href="#risotto">ΡΙΖΟΤΟ</a>
+        <a href="#pinsapizza">ΠΙΝΣΑ/ΠΙΤΣΑ</a>
+        <a href="#kismenu">ΠΑΙΔΙΚΟ ΜΕΝΟΥ</a>
+        <a href="#desserts">ΓΛΥΚΑ</a>
+    </nav>
+    <section id="breakfast">
+        <h2>ΠΡΩΙΝΟ/BRUNCH</h2>
+        <div class="dish">
+            <h3>ΑΥΓΑ BENEDICT ME ΠΡΟΣΟΥΤΟ Ή ΣΟΛΟΜΟ</h3>
+            <p>ΨΩΜΙ, ΔΥΟ ΑΥΓΑ ΠΟΣΕ, ΠΡΟΣΟΥΤΟ Ή ΣΟΛΟΜΟ, ΧΕΙΡΟΠΟΙΗΤΗ ΣΑΛΤΣΑ ΟΛΛΑΝΤΕΖ, ΣΕΡΒΙΡΕΤΑΙ ΜΕ ΣΑΛΑΤΑ</p>
+            <p class="price">8.00€</p>
+        </div>
+        <div class="dish">
+            <h3>ΑΒΟΚΑΝΤΟ ΑΝΟΙΧΤΟ ΤΟΣΤ</h3>
+            <p>ΨΩΜΙ ΜΠΡΙΟΣ, ΜΟΥΣ ΑΒΟΚΑΝΤΟ ΜΕ ΠΙΠΕΡΙΕΣ, ΤΥΡΙ ΚΟΤΑΤΖ, ΔΥΟ ΤΗΓΑΝΙΤΑ ΑΥΓΑ, ΝΤΟΜΑΤΙΝΙΑ</p>
+            <p class="price">9.00€</p>
+        </div>
+        <div class="dish">
+            <h3>ΚΑΓΙΑΝΑΣ LOBSTER</h3>
+            <p>ΨΩΜΙ LOBSTER, ΤΡΙΑ ΑΥΓΑ, ΝΤΟΜΑΤΑ, ΦΕΤΑ, ΣΕΡΒΙΡΕΤΑΙ ΜΕ ΣΑΛΑΤΑ</p>
+            <p class="price">9.00€</p>
+        </div>
+        <div class="dish">
+            <h3>CROQUE MADAME</h3>
+            <p>ΨΩΜΙ, ΑΥΓΟ, ΜΠΕΣΑΜΕΛ, ΤΥΡΙ, ΓΑΛΟΠΟΥΛΑ, ΧΕΙΡΟΠΟΙΗΤΗ ΣΑΛΤΣΑ ΟΛΛΑΝΤΕΖ</p>
+            <p class="price">7.00€</p>
+        </div>
+        <div class="dish">
+            <h3>ΜΠΕΙΓΚΕΛ ΣΟΛΟΜΟ</h3>
+            <p>ΚΑΠΝΙΣΤΟΣ ΣΟΛΟΜΟΣ, ΤΥΡΙ ΚΡΕΜΑ, ΑΓΓΟΥΡΑΚΙ ΤΟΥΡΣΙ, ΔΥΟΣΜΟ, ΛΑΙΜ, ΣΕΡΒΙΡΕΤΑΙ ΜΕ ΣΑΛΑΤΑ</p>
+            <p class="price">8.00€</p>
+        </div>
+    </section>
+    <section id="baquette">
+        <h2>ΜΠΑΓΚΕΤΕΣ/ΤΣΙΑΠΑΤΕΣ</h2>
+        <div class="dish">
+            <h3>Spaghetti Carbonara</h3>
+            <p>Classic Italian pasta with eggs, cheese, pancetta, and pepper.</p>
+            <p class="price">$15.00</p>
+        </div>
+        <div class="dish">
+            <h3>Lasagna</h3>
+            <p>Layers of pasta, ricotta cheese, meat sauce, and mozzarella cheese.</p>
+            <p class="price">$18.00</p>
+        </div>
+    </section>
+    <section id="risotto">
+        <h2>Risotto</h2>
+        <div class="dish">
+            <h3>Mushroom Risotto</h3>
+            <p>Creamy risotto with a mix of mushrooms, parmesan cheese, and truffle oil.</p>
+            <p class="price">$20.00</p>
+        </div>
+        <div class="dish">
+            <h3>Saffron Risotto</h3>
+            <p>Traditional Italian risotto flavored with saffron and topped with parmesan cheese.</p>
+            <p class="price">$22.00</p>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,96 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header img {
+    max-width: 500px;
+}
+
+.header-social {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+.header-social a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+}
+.header-social a i {
+    font-size: 1.5em;
+}
+
+nav {
+    background-color: #000;
+    padding: 10px;
+    text-align: center;
+    display: inline-block;
+    position: -webkit-sticky; /* For Safari */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+
+}
+
+nav #navbar{
+    border-top: 1px solid #fff;
+    width: 100%;
+}
+
+nav.lang {
+    background-color: #000;
+}
+
+nav a {
+    float: left;
+    color: #fff;
+    margin: 3px 5px;
+    padding: 5px;
+    text-decoration: none;
+    border: 1px solid #fff;
+    border-radius: 5px;
+
+}
+
+nav a.active_lang {
+    background-color: #fff;
+    color: #000;
+}
+
+section {
+    padding: 20px;
+    transition: padding-top 0.3s; /* Smooth transition for padding change */
+}
+
+h2 {
+    border-bottom: 2px solid #333;
+    padding-bottom: 10px;
+}
+
+.dish {
+    margin: 20px 0;
+}
+
+.dish h3 {
+    margin: 0 0 5px;
+}
+
+.dish p {
+    margin: 5px 0;
+    /*text-transform: lowercase;*/
+}
+
+.price {
+    font-weight: bold;
+}

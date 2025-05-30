@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Macua Menu Therma Ikarias</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header {
+            background-color: #000;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        header img {
+            max-width: 500px;
+        }
+        nav {
+            background-color: #444;
+            padding: 10px;
+            text-align: center;
+            display: inline-block;
+            position: -webkit-sticky; /* For Safari */
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav.lang {
+            background-color: #000;
+        }
+        nav a {
+            float: left;
+            color: #fff;
+            margin: 3px 5px;
+            padding: 5px;
+            text-decoration: none;
+            border: 1px solid #fff;
+            border-radius: 5px;
+            
+        }
+        section {
+            padding: 20px;
+        }
+        h2 {
+            border-bottom: 2px solid #333;
+            padding-bottom: 10px;
+        }
+        .dish {
+            margin: 20px 0;
+        }
+        .dish h3 {
+            margin: 0 0 5px;
+        }
+        .dish p {
+            margin: 5px 0;
+            text-transform: lowercase;
+        }
+        .price {
+            font-weight: bold;
+        }
+
+
+        .intro-selection {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 70vh;
+            gap: 30px;
+        }
+
+        .button {
+            background-color: #000000;
+            color: white;
+            padding: 40px 60px;
+            border-radius: 12px;
+            cursor: pointer;
+            text-align: center;
+            transition: background-color 0.3s ease;
+            width: 70%;
+            max-width: 400px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+
+        .button h2 {
+            margin: 0;
+            font-size: 1.8rem;
+        }
+
+        .button:hover {
+            background-color: #005f88;
+        }
+
+        footer {
+            background-color: #000;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+
+        @media (max-width: 600px) {
+            .button {
+                padding: 30px 20px;
+            }
+            .button h2 {
+                font-size: 1.5rem;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <img src="makua_logo_black.png" width="80%">
+        <h1>MENU</h1>
+        <nav class="lang">
+            <a href="/">Ελληνικά</a>
+            <a href="/en">English</a>
+        </nav>
+    </header>
+    <div class="intro-selection">
+        <div class="button">
+            <h2>Είμαι στην παραλία</h2>
+            <div>
+                <p><sup>*</sup> διαθέσιμο μενου στην παραλία</p>
+            </div>
+        </div>
+        <div class="button">
+            <h2>Είμαι στο μαγαζί</h2>
+        </div>
+    </div>
+    <footer>
+        &copy; 2025 Makua Beach Bar – All rights reserved
+    </footer>
+</body>
+</html>

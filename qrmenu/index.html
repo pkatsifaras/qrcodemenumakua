@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="stylesheet" type="text/css" href="styles.css"/>
     <title>Makua Menu Therma Ikarias</title>
     <script src="menu.js"></script>
     <script src="https://kit.fontawesome.com/927def6f4b.js" crossorigin="anonymous"></script>
@@ -11,7 +11,11 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-EZE9BDK7CC"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
         gtag('js', new Date());
 
         gtag('config', 'G-EZE9BDK7CC');
@@ -19,32 +23,34 @@
 </head>
 <body>
 
-<header>
-    <img src="../images/makua_logo_black.png" width="80%">
-    <h1>MENU</h1>
-    <nav class="lang">
-        <a class="active_lang" href="./index.html">Ελληνικά</a>
-        <a href="./index_en.html">English</a>
-    </nav>
-    <div class="header-social">
-        <a href="https://www.facebook.com/p/Makua-%CE%99%CE%BA%CE%B1%CF%81%CE%AF%CE%B1-100094803398192/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-        <a href="https://www.instagram.com/makua_ikaria/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-<!--        <a href="https://www.google.com/maps/place/yourbusiness/reviews" target="_blank"><i class="fa-solid fa-star"></i> Google Reviews</a>-->
-        <a href=""><i class="fa-solid fa-wifi"></i>: makua2023</a>
+<header class="header-full">
+    <div class="header-container">
+        <img src="../images/makua_logo_black.png" width="80%">
+        <h1>MENU</h1>
+        <nav class="lang">
+            <a class="active_lang" href="./index.html">Ελληνικά</a>
+            <a href="./index_en.html">English</a>
+        </nav>
+        <div class="header-social">
+            <a href="https://www.facebook.com/p/Makua-%CE%99%CE%BA%CE%B1%CF%81%CE%AF%CE%B1-100094803398192/"
+               target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/makua_ikaria/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <!--        <a href="https://www.google.com/maps/place/yourbusiness/reviews" target="_blank"><i class="fa-solid fa-star"></i> Google Reviews</a>-->
+            <a href=""><i class="fa-solid fa-wifi"></i>: makua2023</a>
+        </div>
     </div>
+
 </header>
+
 <nav id="navbar">
     <a href="#breakfast">ΠΡΩΙΝΟ/BRUNCH</a>
-    <a href="#baquette">ΜΠΑΓΚΕΤΕΣ/ΤΣΙΑΠΑΤΕΣ</a>
-    <a href="#baobuns">BAO BUNS</a>
     <a href="#salads">ΣΑΛΑΤΕΣ</a>
-    <a href="#bruschetta">ΜΠΡΟΥΣΚΕΤΕΣ</a>
-    <a href="#makuaplates">ΠΙΑΤΑ MAKUA</a>
-    <a href="#sandwiches">ΑΜΦΙΨΩΜΑ/ΣΑΝΤΟΥΙΤΣ</a>
+    <a href="#makua-dishes">ΠΙΑΤΑ MAKUA</a>
     <a href="#pasta">ΖΥΜΑΡΙΚΑ</a>
-    <a href="#risotto">ΡΙΖΟΤΟ</a>
-    <a href="#pinsapizza">ΠΙΝΣΑ/ΠΙΤΣΑ</a>
-    <a href="#kismenu">ΠΑΙΔΙΚΟ ΜΕΝΟΥ</a>
+    <a href="#risotto">ΡΙΖΟΤΟ / ΚΡΙΘΑΡΟΤΟ</a>
+    <a href="#sandwiches">ΑΜΦΙΨΩΜΑ/ΣΑΝΤΟΥΙΤΣ</a>
+    <a href="#bao-buns">BAO BUNS</a>
+    <a href="#pizza">ΠΙΝΣΑ/ΠΙΤΣΑ</a>
     <a href="#desserts">ΓΛΥΚΑ</a>
     <a href="#coffee">ΚΑΦΕΔΕΣ</a>
     <a href="#beverages">ΡΟΦΗΜΑΤΑ</a>
@@ -54,368 +60,389 @@
     <a href="#drinks">ΠΟΤΑ</a>
     <a href="#coctail">ΚΟΚΤΕΪΛ</a>
 </nav>
+
+<button id="toggle-nav" class="toggle-nav-btn" aria-label="Toggle menu">✕</button>
+
 <section id="breakfast">
     <h2>ΠΡΩΙΝΟ/BRUNCH</h2>
     <div class="dish">
-        <h3>ΑΥΓΑ BENEDICT ME ΠΡΟΣΟΥΤΟ Ή ΣΟΛΟΜΟ</h3>
-        <p>ΨΩΜΙ, ΔΥΟ ΑΥΓΑ ΠΟΣΕ, ΠΡΟΣΟΥΤΟ Ή ΣΟΛΟΜΟ, ΧΕΙΡΟΠΟΙΗΤΗ ΣΑΛΤΣΑ ΟΛΛΑΝΤΕΖ, ΣΕΡΒΙΡΕΤΑΙ ΜΕ ΣΑΛΑΤΑ</p>
-        <p class="price">8.00€</p>
+        <h3>ΑΥΓΑ BENEDICT ΜΕ ΠΡΟΣΟΥΤΟ Ή ΣΟΛΟΜΟ</h3>
+        <p>ΨΩΜΙ, ΔΥΟ ΑΥΓΑ ΠΟΣΕ, ΠΡΟΣΟΥΤΟ Ή ΣΟΛΟΜΟ, ΧΕΙΡΟΠΟΙΗΤΗ ΣΑΛΤΣΑ ΟΛΛΑΝΔΕΖ</p>
+        <p class="price">8,50€</p>
     </div>
+
     <div class="dish">
         <h3>ΑΒΟΚΑΝΤΟ ΑΝΟΙΧΤΟ ΤΟΣΤ</h3>
-        <p>ΨΩΜΙ ΜΠΡΙΟΣ, ΜΟΥΣ ΑΒΟΚΑΝΤΟ ΜΕ ΠΙΠΕΡΙΕΣ, ΤΥΡΙ ΚΟΤΑΤΖ, ΔΥΟ ΤΗΓΑΝΙΤΑ ΑΥΓΑ, ΝΤΟΜΑΤΙΝΙΑ</p>
-        <p class="price">9.00€</p>
+        <p>ΨΩΜΙ, ΜΟΥΣ ΑΒΟΚΑΝΤΟ ΜΕ ΠΙΠΕΡΙΕΣ, ΤΥΡΙ ΚΟΤΑΤΖ, ΔΥΟ ΒΡΑΣΤΑ ΑΥΓΑ, ΝΤΟΜΑΤΙΝΙΑ</p>
+        <p class="price">9,00€</p>
     </div>
-    <div class="dish">
-        <h3>ΚΑΓΙΑΝΑΣ LOBSTER</h3>
-        <p>ΨΩΜΙ LOBSTER, ΤΡΙΑ ΑΥΓΑ, ΝΤΟΜΑΤΑ, ΦΕΤΑ, ΣΕΡΒΙΡΕΤΑΙ ΜΕ ΣΑΛΑΤΑ</p>
-        <p class="price">9.00€</p>
-    </div>
+
     <div class="dish">
         <h3>CROQUE MADAME</h3>
-        <p>ΨΩΜΙ, ΑΥΓΟ, ΜΠΕΣΑΜΕΛ, ΤΥΡΙ, ΓΑΛΟΠΟΥΛΑ, ΧΕΙΡΟΠΟΙΗΤΗ ΣΑΛΤΣΑ ΟΛΛΑΝΤΕΖ</p>
-        <p class="price">7.00€</p>
+        <p>ΨΩΜΙ, ΤΗΓΑΝΙΤΟ ΑΥΓΟ, ΜΠΕΣΑΜΕΛ, ΤΥΡΙ, ΓΑΛΟΠΟΥΛΑ, ΧΕΙΡΟΠΟΙΗΤΗ ΣΑΛΤΣΑ ΟΛΛΑΝΔΕΖ</p>
+        <p class="price">7,00€</p>
     </div>
+
     <div class="dish">
-        <h3>ΜΠΕΙΓΚΕΛ ΣΟΛΟΜΟ</h3>
-        <p>ΚΑΠΝΙΣΤΟΣ ΣΟΛΟΜΟΣ, ΤΥΡΙ ΚΡΕΜΑ, ΑΓΓΟΥΡΑΚΙ ΤΟΥΡΣΙ, ΔΥΟΣΜΟ, ΛΑΙΜ, ΣΕΡΒΙΡΕΤΑΙ ΜΕ ΣΑΛΑΤΑ</p>
-        <p class="price">8.00€</p>
-    </div>
-    <div class="dish">
-        <h3>ΟΜΕΛΕΤΑ</h3>
-        <p>ΜΠΕΪΚΟΝ, ΤΥΡΙ, ΝΤΟΜΑΤA, ΣΕΡΒΙΡΕΤΑΙ ΜΕ ΣΑΛΑΤΑ</p>
-        <p class="price">6.50€</p>
+        <h3>ΑΥΓΑ SCRAMBLE</h3>
+        <p>ΦΡΥΓΑΝΙΣΜΕΝΟ ΨΩΜΙ, ΑΥΓΑ, ΚΡΕΜΑ ΓΑΛΑΚΤΟΣ</p>
+        <p class="price">6,50€</p>
     </div>
 
     <div class="dish">
         <h3>ΟΜΕΛΕΤΑ</h3>
-        <p>ΜΠΕΪΚΟΝ, ΤΥΡΙ, ΝΤΟΜΑΤA, ΣΕΡΒΙΡΕΤΑΙ ΜΕ ΣΑΛΑΤΑ</p>
-        <p class="price">6.50€</p>
+        <p>3 ΑΥΓΑ, ΜΠΕΙΚΟΝ, ΤΥΡΙ, ΝΤΟΜΑΤΑ, ΦΡΥΓΑΝΙΣΜΕΝΟ ΨΩΜΙ, ΣΑΛΑΤΑ</p>
+        <p class="price">8,00€</p>
     </div>
+
     <div class="dish">
-        <h3>ΟΜΕΛΕΤΑ ΚΟΛΟΚΥΘΙ ΔΥΟΣΜΟ</h3>
-        <p>ΚΟΛΟΚΥΘΙ, ΔΥΟΣΜΟ, ΤΥΡΙ ΚΡΕΜΑ, ΣΕΡΒΙΡΕΤΑΙ ΜΕ ΣΑΛΑΤΑ</p>
-        <p class="price">6.50€</p>
+        <h3>ΑΛΜΥΡΕΣ ΤΗΓΑΝΙΤΕΣ</h3>
+        <p>ΜΠΕΙΚΟΝ, ΤΥΡΙ, ΝΤΟΜΑΤΑ, ΤΗΓΑΝΙΤΟ ΑΥΓΟ, ΠΑΡΜΕΖΑΝΑ, ΜΑΖΙΟΝΕΖΑ</p>
+        <p class="price">9,00€</p>
     </div>
+
     <div class="dish">
-        <h3>SCRAMBLE ΜΠΟΥΡΙΤΟ</h3>
-        <p>ΤΟΡΤΙΓΙΑ, ΑΥΓΑ, ΚΡΕΜΑ ΓΑΛΑΚΤΟΣ, ΜΟΤΣΑΡΕΛΑ, ICEBERG, ΤΥΡΙ ΚΡΕΜΑ, ΣΕΡΒΙΡΕΤΑΙ ΜΕ ΣΑΛΑΤΑ</p>
-        <p class="price">6.50€</p>
+        <h3>ΤΟΡΤΙΓΙΑ ΚΟΤΟΠΟΥΛΟ</h3>
+        <p>ΤΟΡΤΙΓΙΑ, ΚΟΤΟΠΟΥΛΟ ΨΗΤΟ, ΑΒΟΚΑΝΤΟ, ΝΤΟΜΑΤΑ, ΜΑΡΟΥΛΙ, ΠΑΡΜΕΖΑΝΑ, ΜΑΓΙΟΝΕΖΑ</p>
+        <p class="price">8,50€</p>
     </div>
+
     <div class="dish">
-        <h3>ΤΗΓΑΝΙΤΕΣ ΜΕ ΠΡΑΛΙΝΑ ΦΟΥΝΤΟΥΚΙ, ΜΠΟΥΕΝΟ, ΦΡΑΟΥΛΑ, ΦΥΣΤΙΚΙ</h3>
-        <p class="price">7.00€</p>
+        <h3>ΤΟΡΤΙΓΙΑ ΓΑΛΟΠΟΥΛΑ</h3>
+        <p>ΤΟΡΤΙΓΙΑ, ΓΑΛΟΠΟΥΛΑ, ΤΥΡΙ, ΝΤΟΜΑΤΑ, ΜΑΡΟΥΛΙ, ΑΥΓΟ, ΠΙΠΕΡΙΑ, ΜΑΓΙΟΝΕΖΑ</p>
+        <p class="price">5,50€</p>
     </div>
+
     <div class="dish">
-        <h3>ΤΗΓΑΝΙΤΕΣ ΜΕ ΤΥΡΙ ΚΡΕΜΑ & ΜΑΡΜΕΛΑΔΑ</h3>
-        <p class="price">7.00€</p>
-    </div>
-    <div class="dish">
-        <h3>ΤΗΓΑΝΙΤΕΣ ΜΠΑΝΟΦΙ</h3>
-        <p class="price">7.50€</p>
-    </div>
-    <div class="dish">
-        <h3>ΤΟΣΤ ΓΑΛΟΠΟΥΛΑ -ΤΥΡΙ</h3>
-        <p>ΣΕΡΒΙΡΕΤΑΙ ΜΕ ΠΑΤΑΤΑΚΙΑ</p>
-        <p class="price">2.50€</p>
-    </div>
-    <div class="dish">
-        <h3>ΓΚΡΑΝΟΛΑ ΚΡΑΝΜΠΕΡΙ ΜΕ ΓΙΑΟΥΡΤΙ, ΜΕΛΙ & ΦΡΟΥΤΑ</h3>
-        <p class="price">7.50€</p>
-    </div>
-    <div class="dish">
-        <h3>ΦΡΟΥΤΟΣΑΛΑΤΑ</h3>
-        <p class="price">5.50€</p>
-    </div>
-    <div class="dish">
-        <h3>ΓΙΑΟΥΡΤΙ ΜΕ ΦΡΟΥΤΑ & ΜΕΛΙ</h3>
-        <p class="price">6.50€</p>
+        <h3>ΤΟΣΤ</h3>
+        <p>ΓΑΛΟΠΟΥΛΑ, ΤΥΡΙ</p>
+        <p class="price">3,00€</p>
     </div>
 
 </section>
-<section id="baquette">
-    <h2>ΜΠΑΓΚΕΤΕΣ/ΤΣΙΑΠΑΤΕΣ</h2>
+
+<section id="salads-extra">
+    <h2>ΣΑΛΑΤΕΣ (ΠΡΩΙΝΟ)</h2>
+
     <div class="dish">
-        <h3>ΤΥΡΙ-ΓΑΛΟΠΟΥΛΑ</h3>
-        <p>ΓΑΛΟΠΟΥΛΑ, ΤΥΡΙ, ΝΤΟΜΑΤΑ, ΜΑΓΙΟΝΕΖΑ</p>
-        <p class="price">4.00€</p>
+        <h3>ΖΥΜΑΡΙΚΑ</h3>
+        <p>ΖΥΜΑΡΙΚΑ ΦΑΡΦΑΛΕΣ, ΤΟΝΟΣ, ΚΑΛΑΜΠΟΚΙ, ΤΟΜΑΤΙΝΙΑ, ΚΑΠΑΡΗ, ΑΝΗΘΟΣ, ΜΑΓΙΟΝΕΖΑ</p>
+        <p class="price">8,50€</p>
     </div>
+
     <div class="dish">
-        <h3>ΜΟΡΤΑΔΕΛΑ-ΤΥΡΙ</h3>
-        <p>ΤΥΡΙ, ΜΟΡΤΑΔΕΛΑ, ΤΥΡΙ ΚΡΕΜΑ, ΝΤΟΜΑΤΑ, ΛΟΛΑ</p>
-        <p class="price">4.50€</p>
+        <h3>ΣΟΥΠΕΡ ΜΠΩΛ</h3>
+        <p>ΠΡΑΣΙΝΗ ΣΑΛΑΤΑ, ΑΒΟΚΑΝΤΟ, ΓΛΥΚΟΠΑΤΑΤΑ, ΤΟΜΑΤΙΝΙΑ, ΑΓΓΟΥΡΙ, ΚΟΤΟΠΟΥΛΟ ΨΗΤΟ ή ΚΑΠΝΙΣΤΟΣ ΣΟΛΟΜΟΣ ή 2 ΑΥΓΑ
+            ΒΡΑΣΤΑ, ΣΩΣ ΒΑΛΣΑΜΙΚΟ ΜΕΛΙ</p>
+        <p class="price">11,00€</p>
     </div>
+
     <div class="dish">
-        <h3>ΣΑΛΑΜΙ ΑΕΡΟΣ</h3>
-        <p>ΣΑΛΑΜΙ ΑΕΡΟΣ, ΝΤΟΜΑΤΑ, ΦΕΤΑ, ΕΛΙΕΣ</p>
-        <p class="price">5.00€</p>
-    </div>
-    <div class="dish">
-        <h3>ΚΟΤΟΠΟΥΛΟ</h3>
-        <p>ΚΟΤΟΠΟΥΛΟ, ΠΑΡΜΕΖΑΝΑ, ICEBERG, ΚΑΛΑΜΠΟΚΙ, ΝΤΟΜΑΤΑ, ΣΑΛΤΣΑ ΚΑΙΣΑΡΑ</p>
-        <p class="price">6.00€</p>
-    </div>
-    <div class="dish">
-        <h3>ΤΟΝΟ</h3>
-        <p>ΤΟΝΟΣ, ΜΑΓΙΟΝΕΖΑ, ΚΑΛΑΜΠΟΚΙ, ΑΓΓΟΥΡΙ, ΚΟΚΚΙΝΗ ΠΙΠΕΡΙΑ, ΜΑΡΟΥΛΙ</p>
-        <p class="price">6.00€</p>
-    </div>
-    <div class="dish">
-        <h3>VEGAN</h3>
-        <p>ΜΑΝΙΤΑΡΙΑ, ΨΗΤΑ ΛΑΧΑΝΙΚΑ, ΧΟΥΜΟΥΣ, ΤΣΑΤΝΕΙ ΝΤΟΜΑΤΑ, ΡΟΚΑ</p>
-        <p class="price">6.00€</p>
+        <h3>ΒΙΓΚΑΝ ΣΟΥΠΕΡ ΜΠΩΛ</h3>
+        <p>ΠΡΑΣΙΝΗ ΣΑΛΑΤΑ, ΑΒΟΚΑΝΤΟ, ΓΛΥΚΟΠΑΤΑΤΑ, ΤΟΜΑΤΙΝΙΑ, ΑΓΓΟΥΡΙ, ΚΙΝΟΑ, ΛΑΔΙ, ΛΕΜΟΝΙ</p>
+        <p class="price">10,00€</p>
     </div>
 </section>
-<section id="baobuns">
-    <h2>BAO BUNS</h2>
+<section id="amfipsoma">
+    <h2>ΑΜΦΙΨΩΜΑ (ΠΡΩΙΝΟ)</h2>
+
+    <div class="dish">
+        <h3>BLACK ANGUS ΜΠΕΡΓΚΕΡ</h3>
+        <p>BLACK ANGUS ΚΙΜΑΣ, ΤΥΡΙ ΤΣΕΝΤΑΡ, ΜΠΕΙΚΟΝ, ΝΤΟΜΑΤΑ, ΜΑΡΟΥΛΙ, ΧΕΙΡΟΠΟΙΗΤΕΣ ΠΙΚΛΕΣ, ΣΩΣ ΜΠΑΡΜΠΕΚΙΟΥ, ΜΑΓΙΟΝΕΖΑ,
+            ΨΩΜΑΚΙ ΜΠΡΙΟΣ, ΣΕΡΒΙΡΕΤΑΙ ΜΕ ΠΑΤΑΤΕΣ ΤΗΓΑΝΙΤΕΣ</p>
+        <p class="price">14,00€</p>
+    </div>
+
+    <div class="dish">
+        <h3>ΚΟΤΟΠΟΥΛΟ ΜΠΕΡΓΚΕΡ</h3>
+        <p>ΧΕΙΡΟΠΟΙΗΤΟ ΦΙΛΕΤΟ ΚΟΤΟΠΟΥΛΟ ΠΑΝΕ, ΤΥΡΙ ΤΣΕΝΤΑΡ, ΝΤΟΜΑΤΑ, ΜΑΡΟΥΛΙ, ΧΕΙΡΟΠΟΙΗΤΕΣ ΠΙΚΛΕΣ, ΣΩΣ ΜΟΥΣΤΑΡΔΑ
+            ΜΑΓΙΟΝΕΖΑ, ΨΩΜΑΚΙ ΜΠΡΙΟΣ, ΣΕΡΒΙΡΕΤΑΙ ΜΕ ΠΑΤΑΤΕΣ ΤΗΓΑΝΙΤΕΣ</p>
+        <p class="price">11,00€</p>
+    </div>
+
+    <div class="dish">
+        <h3>ΒΙΓΚΑΝ ΜΠΕΡΓΚΕΡ</h3>
+        <p>ΨΗΤΑ ΛΑΧΑΝΙΚΑ, ΒΙΓΚΑΝ ΤΥΡΙ, ΠΑΣΤΑ ΤΡΟΥΦΑΣ, ΨΩΜΑΚΙ</p>
+        <p class="price">10,00€</p>
+    </div>
+
+    <div class="dish">
+        <h3>ΚΛΑΜΠ ΣΑΝΤΟΥΙΤΣ</h3>
+        <p>ΤΥΡΙ, ΓΑΛΟΠΟΥΛΑ, ΝΤΟΜΑΤΑ, ΜΑΡΟΥΛΙ, ΜΠΕΙΚΟΝ, ΜΑΓΙΟΝΕΖΑ, ΣΕΡΒΙΡΕΤΑΙ ΜΕ ΠΑΤΑΤΕΣ ΤΗΓΑΝΙΤΕΣ</p>
+        <p class="price">8,00€</p>
+    </div>
+
+    <div class="dish">
+        <h3>ΚΛΑΜΠ ΣΑΝΤΟΥΙΤΣ ΚΟΤΟΠΟΥΛΟ</h3>
+        <p>ΦΙΛΕΤΟ ΚΟΤΟΠΟΥΛΟ ΨΗΤΟ, ΤΥΡΙ, ΝΤΟΜΑΤΑ, ΜΑΡΟΥΛΙ, ΜΠΕΙΚΟΝ, ΜΑΓΙΟΝΕΖΑ, ΣΕΡΒΙΡΕΤΑΙ ΜΕ ΠΑΤΑΤΕΣ ΤΗΓΑΝΙΤΕΣ</p>
+        <p class="price">10,00€</p>
+    </div>
+
+    <div class="dish">
+        <h3>ΚΟΤΟΜΠΟΥΚΙΕΣ</h3>
+        <p>ΚΟΤΟΠΟΥΛΟ ΠΑΝΕ, ΤΗΓΑΝΙΤΕΣ ΠΑΤΑΤΕΣ, ΣΩΣ ΜΟΥΣΤΑΡΔΑΣ ΜΕΛΙ</p>
+        <p class="price">9,00€</p>
+    </div>
+</section>
+<section id="bao-buns-extra">
+    <h2>BAO BUNS (ΠΡΩΙΝΟ)</h2>
+
     <div class="dish">
         <h3>ΚΟΤΟΠΟΥΛΟ</h3>
         <p>ΧΕΙΡΟΠΟΙΗΤΟ ΚΟΤΟΠΟΥΛΟ ΠΑΝΕ, ΠΙΚΛΑ ΑΓΓΟΥΡΙ, ΚΡΕΜΜΥΔΙ, ΣΕΛΕΡΙ, ΜΑΓΙΟΝΕΖΑ ΚΑΠΝΙΣΤΗΣ ΠΙΠΕΡΙΑΣ</p>
-        <p class="price">7.00€</p>
+        <p class="price">7,50€</p>
     </div>
+
     <div class="dish">
         <h3>ΓΑΡΙΔΑ</h3>
         <p>ΓΑΡΙΔΑ ΠΑΝΕ, ΜΑΝΓΚΟ, ΑΒΟΚΑΝΤΟ, ΚΡΕΜΜΥΔΙ, ΛΑΙΜ, ΜΑΓΙΟΝΕΖΑ CHILLIE</p>
-        <p class="price">8.00€</p>
+        <p class="price">8,50€</p>
     </div>
 </section>
+<section id="yogurt-desserts">
+    <h2>ΓΙΑΟΥΡΤΙΑ / ΓΛΥΚΑ (ΠΡΩΙΝΟ)</h2>
+
+    <div class="dish">
+        <h3>ΓΙΑΟΥΡΤΙ ΜΕ ΜΕΛΙ ΚΑΙ ΦΡΟΥΤΑ</h3>
+        <p class="price">6,50€</p>
+    </div>
+
+    <div class="dish">
+        <h3>ΓΙΑΟΥΡΤΙ ΜΕ ΓΚΡΑΝΟΛΑ ΚΑΙ ΜΕΛΙ</h3>
+        <p class="price">7,50€</p>
+    </div>
+
+    <div class="dish">
+        <h3>ΦΡΟΥΤΟΣΑΛΑΤΑ</h3>
+        <p class="price">5,50€</p>
+    </div>
+
+    <div class="dish">
+        <h3>ΤΗΓΑΝΙΤΕΣ ΠΡΑΛΙΝΑ</h3>
+        <p class="price">7,00€</p>
+    </div>
+
+    <div class="dish">
+        <h3>ΤΗΓΑΝΙΤΕΣ ΜΕ ΚΡΕΜΑ ΤΥΡΙ ΚΑΙ ΜΑΡΜΕΛΑΔΑ</h3>
+        <p class="price">7,00€</p>
+    </div>
+</section>
+
+
+<section id="appetizers">
+    <h2>ΟΡΕΚΤΙΚΑ</h2>
+    <div class="dish">
+        <h3>ΜΟΥΣ ΤΑΡΑΜΑ</h3>
+        <p>ΜΟΥΣ ΤΑΡΑΜΑ ΜΕ ΤΣΙΠΣ ΑΡΑΒΙΚΗΣ ΠΙΤΑΣ & ΡΟΔΕΛΕΣ ΕΛΙΑΣ</p>
+        <p class="price">8.00€</p>
+    </div>
+    <div class="dish">
+        <h3>ΑΡΑΝΤΣΙΝΙ</h3>
+        <p>ΠΑΝΑΡΙΣΜΕΝΕΣ ΜΠΑΛΕΣ ΡΥΖΙΟΥ ΜΕ ΛΑΧΑΝΙΚΑ, ΜΥΡΩΔΙΚΑ ΣΕ ΣΑΛΤΣΑ ΠΙΠΕΡΙΑΣ ΦΛΩΡΙΝΗΣ, ΦΕΤΑ & ΔΥΟΣΜΟ</p>
+        <p class="price">8.50€</p>
+    </div>
+    <div class="dish">
+        <h3>ΦΕΤΑ ΚΑΝΤΑΙΦΙ</h3>
+        <p>ΦΕΤΑ ΤΥΛΙΧΤΗ ΣΕ ΦΥΛΛΟ ΚΑΝΤΑΙΦΙ, ΘΥΜΑΡΙ, ΜΕΛΙ & ΜΑΥΡΟ ΣΟΥΣΑΜΙ</p>
+        <p class="price">8.00€</p>
+    </div>
+    <div class="dish">
+        <h3>ΤΑΛΑΓΑΝΙ ΨΗΤΟ</h3>
+        <p>ΤΑΛΑΓΑΝΙ ΤΥΡΙ ΜΕ ΨΗΤΑ ΛΑΧΑΝΙΚΑ, ΤΣΑΤΝΕΙ ΝΤΟΜΑΤΑΣ, ΚΡΕΜΑ ΒΑΛΣΑΜΙΚΟΥ</p>
+        <p class="price">7.50€</p>
+    </div>
+    <div class="dish">
+        <h3>ΜΠΡΟΥΣΚΕΤΑ ΠΕΣΤΟ ΒΑΣΙΛΙΚΟΥ</h3>
+        <p>ΧΕΙΡΟΠΟΙΗΤΟ ΠΕΣΤΟ ΒΑΣΙΛΙΚΟΥ, ΝΤΟΜΑΤΑ, ΠΑΡΜΕΖΑΝΑ, ΡΟΚΑ & ΚΡΕΜΑ ΒΑΛΣΑΜΙΚΟΥ</p>
+        <p class="price">6.50€</p>
+    </div>
+    <div class="dish">
+        <h3>ΜΠΡΟΥΣΚΕΤΑ ΣΟΛΟΜΟΥ</h3>
+        <p>ΚΑΠΝΙΣΤΟΣ ΣΟΛΟΜΟΣ, ΑΓΓΟΥΡΙ, ΔΥΟΣΜΟ & ΧΥΜΟ ΛΑΙΜ</p>
+        <p class="price">8.50€</p>
+    </div>
+    <div class="dish">
+        <h3>ΜΠΡΟΥΣΚΕΤΑ ΠΡΟΣΟΥΤΟ</h3>
+        <p>ΠΡΟΣΟΥΤΟ, ΠΑΡΜΕΖΑΝΑ, ΡΟΚΑ, ΜΕΛΙ</p>
+        <p class="price">7.50€</p>
+    </div>
+</section>
+
 <section id="salads">
     <h2>ΣΑΛΑΤΕΣ</h2>
     <div class="dish">
         <h3>MAKUA</h3>
-        <p>ΛΟΛΑ ΠΡΑΣΙΝΗ & ΚΟΚΚΙΝΗ, ΜΑΝΓΚΟ, ΚΟΚΚΙΝΗ
-            ΠΙΠΕΡΙΑ, ΚΟΤΟΠΟΥΛΟ ΠΑΝΕ, ΣΟΥΣΑΜΙ, ΝΤΡΕΣΙΝΓΚ
-            ΜΑΝΓΚΟ</p>
-        <p class="price">7.00€</p>
+        <p>ΠΡΑΣΙΝΗ ΣΑΛΑΤΑ, ΜΑΝΓΚΟ, ΚΟΚΚΙΝΗ ΠΙΠΕΡΙΑ, ΚΟΤΟΠΟΥΛΟ ΠΑΝΕ, ΣΟΥΣΑΜΙ, ΝΤΡΕΣΙΝΓΚ ΜΑΝΓΚΟ</p>
+        <p class="price">11.00€</p>
     </div>
     <div class="dish">
         <h3>ΚΑΙΣΑΡΑ</h3>
-        <p>ICEBURG, ΚΟΤΟΠΟΥΛΟ ΠΑΝΕ, ΜΠΕΙΚΟΝ, ΚΑΛΑΜΠΟΚΙ,
-            ΚΡΟΥΤΟΝ, ΠΑΡΜΕΖΑΝΑ, ΝΤΡΕΣΙΝΓΚ</p>
+        <p>ICEBERG, ΨΗΤΟ ΚΟΤΟΠΟΥΛΟ, ΜΠΕΙΚΟΝ, ΚΑΛΑΜΠΟΚΙ, ΚΡΟΥΤΟΝ, ΠΑΡΜΕΖΑΝΑ, ΝΤΡΕΣΙΝΓΚ</p>
         <p class="price">10.00€</p>
     </div>
     <div class="dish">
         <h3>ΡΟΥΚΟΛΑ</h3>
-        <p>ΡΟΚΑ, ΠΡΑΣΙΝΗ ΣΑΛΑΤΑ, ΠΑΡΜΕΖΑΝΑ,
-            ΑΠΟΞΗΡΑΜΕΝΟ ΣΥΚΟ, ΚΟΥΚΟΥΝΑΡΙ, ΒΙΝΕΓΚΡΕΤ
-            ΒΑΛΣΑΜΙΚΟΥ</p>
-        <p class="price">9.00€</p>
-    </div>
-    <div class="dish">
-        <h3>ΜΕΣΟΓΕΙΑΚΗ</h3>
-        <p>ΝΤΑΚΟΣ ΧΑΡΟΥΠΙΟΥ, ΝΤΟΜΑΤΑ, ΑΓΓΟΥΡΙ, ΕΛΙΕΣ,
-            ΚΑΠΑΡΗ, ΠΕΣΤΟ, ΟΥΖΟ, ΚΟΠΑΝΙΣΤΗ</p>
-        <p class="price">8.50€</p>
-    </div>
-    <div class="dish">
-        <h3>CAPRESE</h3>
-        <p>ΝΤΟΜΑΤΑ, ΜΟΤΣΑΡΕΛΑ, ΠΕΣΤΟ ΒΑΣΙΛΙΚΟΥ, ΠΡΑΣΙΝΗ
-            ΣΑΛΑΤΑ</p>
-        <p class="price">9.00€</p>
-    </div>
-    <div class="dish">
-        <h3>ΓΑΛΛΙΚΗ</h3>
-        <p>ΛΟΛΑ ΠΡΑΣΙΝΗ & ΚΟΚΚΙΝΗ, ΦΙΛΕΤΟ ΠΟΡΤΟΚΑΛΙ,
-            ΚΑΡΥΔΙ, ΜΠΛΕ ΤΥΡΙ, ΝΤΡΕΣΙΝΓΚ ΤΖΙΝΤΖΕΡ</p>
+        <p>ΡΟΚΑ, ΠΡΑΣΙΝΗ ΣΑΛΑΤΑ, ΠΑΡΜΕΖΑΝΑ, ΑΠΟΞΗΡΑΜΕΝΟ ΣΥΚΟ, ΛΙΑΣΤΗ ΤΟΜΑΤΑ, ΣΩΣ ΒΑΛΣΑΜΙΚΟ ΜΕΛΙ</p>
         <p class="price">9.50€</p>
     </div>
-</section>
-<section id="bruschetta">
-    <h2>ΜΠΡΟΥΣΚΕΤΕΣ</h2>
     <div class="dish">
-        <h3>ΠΡΟΣΟΥΤΟ</h3>
-        <p>ΠΡΟΣΟΥΤΟ, ΤΥΡΙ ΚΡΕΜΑ, ΡΟΚΑ, ΜΕΛΙ, ΠΑΡΜΕΖΑΝΑ</p>
-        <p class="price">6.50€</p>
+        <h3>ΝΤΑΚΑΚΙΑ</h3>
+        <p>ΚΡΙΘΙΝΑ ΠΑΞΙΜΑΔΑΚΙΑ, ΚΑΡΕ ΝΤΟΜΑΤΑΣ, ΤΡΙΦΤΗ ΙΚΑΡΙΑΣ, ΕΛΙΕΣ, ΚΑΠΑΡΗ, ΕΛΑΙΟΛΑΔΟ, ΡΙΓΑΝΗ</p>
+        <p class="price">8.00€</p>
     </div>
     <div class="dish">
-        <h3>ΣΟΛΟΜΟ</h3>
-        <p>ΚΑΠΝΙΣΤΟΣ ΣΟΛΟΜΟΣ, ΑΒΟΚΑΝΤΟ, ΤΥΡΙ ΚΡΕΜΑ,
-            ΔΥΟΣΜΟ, ΡΟΚΑ</p>
-        <p class="price">7.00€</p>
-    </div>
-    <div class="dish">
-        <h3>ΜΟΤΣΑΡΕΛΑ</h3>
-        <p>ΜΟΤΣΑΡΕΛΑ, ΝΤΟΜΑΤΙΝΙΑ, ΠΕΣΤΟ ΒΑΣΙΛΙΚΟΥ</p>
-        <p class="price">5.50€</p>
-    </div>
-    <div class="dish">
-        <h3>ΜΑΝΙΤΑΡΙΑ</h3>
-        <p>ΜΑΝΙΤΑΡΙΑ ΨΗΤΑ, ΠΕΣΤΟ ΒΑΣΙΛΙΚΟΥ, ΡΟΚΑ, ΧΟΥΜΟΥΣ</p>
-        <p class="price">5.50€</p>
-    </div>
-    <div class="dish">
-        <h3>ΛΑΧΑΝΙΚΑ ΓΡΑΒΙΕΡΑ</h3>
-        <p>ΨΗΤΑ ΛΑΧΑΝΙΚΑ, ΓΡΑΒΙΕΡΑ, ΤΣΑΤΝΕΪ ΝΤΟΜΑΤΑ</p>
-        <p class="price">6.00€</p>
+        <h3>ΚΙΝΟΑ</h3>
+        <p>ΚΙΝΟΑ ΤΡΙΧΡΩΜΗ, ΑΓΓΟΥΡΙ, BABY ΣΠΑΝΑΚΙ, ΑΒΟΚΑΝΤΟ, ΦΙΛΕΤΟ ΠΟΡΤΟΚΑΛΙ, ΒΙΝΕΓΚΡΕΤ ΠΟΡΤΟΚΑΛΙ ΔΥΟΣΜΟ</p>
+        <p class="price">12.00€</p>
     </div>
 </section>
-<section id="makuaplates">
+
+<section id="makua-dishes">
     <h2>ΠΙΑΤΑ MAKUA</h2>
     <div class="dish">
         <h3>ΨΑΡΟΝΕΦΡΙ</h3>
-        <p>ΨΑΡΟΝΕΦΡΙ ΜΕ ΚΡΕΜΑ ΠΑΤΑΤΑΣ, ΣΑΛΤΣΑ ΑΠΟ
-            ΠΑΡΜΕΖΑΝΑ ΚΑΙ ΤΡΟΥΦΑ, ΜΑΝΙΤΑΡΙΑ, ΚΟΥΚΟΥΝΑΡΙ</p>
+        <p>ΨΑΡΟΝΕΦΡΙ, ΠΟΥΡΕΣ ΠΑΤΑΤΑΣ, ΣΑΛΤΣΑ ΠΑΡΜΕΖΑΝΑ & ΤΡΟΥΦΑ, ΜΑΝΙΤΑΡΙΑ, ΚΟΥΚΟΥΝΑΡΙ</p>
         <p class="price">14.50€</p>
     </div>
     <div class="dish">
-        <h3>ΓΕΜΙΣΤΟ ΚΟΤΟΠΟΥΛΟ ΜΕ ΓΑΡΙΔΕΣ</h3>
-        <p>ΣΑΛΤΣΑ ΓΑΡΙΔΑΣ, ΚΟΛΟΚΥΘΙ, ΜΠΕΙΚΟΝ, ΤΥΡΙ ΚΡΕΜΑ,
-            ΚΑΡΟΤΟ</p>
-        <p class="price">15.50€</p>
-    </div>
-</section>
-<section id="sandwiches">
-    <h2>ΑΜΦΙΨΩΜΑ/ΣΑΝΤΟΥΙΤΣ</h2>
-    <div class="dish">
-        <h3>ΜΠΕΡΓΚΕΡ ΜΕ ΜΟΣΧΑΡΙΣΙΟ
-            ΜΠΙΦΤΕΚΙ</h3>
-        <p>ΨΩΜΑΚΙ ΜΠΡΙΟΣ, ΧΕΙΡΟΠΟΙΗΤΟ ΜΟΣΧΑΡΙΣΙΟ
-            ΜΠΙΦΤΕΚΙ, ΤΣΕΝΤΑΡ, ΜΠΕΪΚΟΝ, ΝΤΟΜΑΤΑ,
-            ICEBURG, ΠΙΚΛΕΣ, ΣΩΣ ΜΠΑΡΜΠΕΚΙΟΥ, ΜΑΓΙΟΝΕΖΑ,
-            ΣΕΡΒΙΡΕΤΑΙ ΜΕ ΠΑΤΑΤΕΣ ΤΗΓΑΝΙΤΕΣ</p>
-        <p class="price">12.00€</p>
+        <h3>ΚΟΤΟΠΟΥΛΟ ΚΑΠΡΕΖΕ</h3>
+        <p>ΦΙΛΕΤΟ ΚΟΤΟΠΟΥΛΟ ΨΗΤΟ, ΦΡΕΣΚΙΑ ΝΤΟΜΑΤΑ, ΨΗΤΟ ΤΥΡΙ ΚΑΘΟΥΡΑ ΙΚΑΡΙΑΣ, ΧΕΙΡΟΠΟΙΗΤΟ ΠΕΣΤΟ ΒΑΣΙΛΙΚΟΥ, ΚΟΥΚΟΥΝΑΡΙ,
+            ΡΟΚΑ & ΚΡΕΜΑ ΒΑΛΣΑΜΙΚΟ</p>
+        <p class="price">13.00€</p>
     </div>
     <div class="dish">
-        <h3>ΜΠΕΡΓΚΕΡ ΜΕ ΚΟΤΟΠΟΥΛΟ</h3>
-        <p>ΨΩΜΑΚΙ ΜΠΡΙΟΣ, ΧΕΙΡΟΠΟΙΗΤΟ ΦΙΛΕΤΟ ΚΟΤΟΠΟΥΛΟ
-            ΠΑΝΕ, ΜΠΕΪΚΟΝ, ΝΤΟΜΑΤΑ, ICEBURG, ΠΙΚΛΕΣ, ΣΩΣ
-            ΜΑΓΙΟΝΕΖΑ ΜΟΥΣΤΑΡΔΑ, ΣΕΡΒΙΡΕΤΑΙ ΜΕ ΠΑΤΑΤΕΣ
-            ΤΗΓΑΝΙΤΕΣ</p>
-        <p class="price">10.00€</p>
-    </div>
-    <div class="dish">
-        <h3>ΚΛΑΜΠ ΣΑΝΤΟΥΙΤΣ</h3>
-        <p>ΤΥΡΙ, ΓΑΛΟΠΟΥΛΑ, ΝΤΟΜΑΤΑ, ICEBERG, ΜΠΕΪΚΟΝ,
-            ΜΑΓΙΟΝΕΖΑ, ΣΕΡΒΙΡΕΤΑΙ ΜΕ ΠΑΤΑΤΕΣ</p>
-        <p class="price">7.50€</p>
-    </div>
-    <div class="dish">
-        <h3>LOBSTER ΠΑΝΣΕΤΑ</h3>
-        <p>ΨΩΜΙ LOBSTER, ΨΙΛΟΚΟΜΜΕΝΗ ΠΑΝΣΕΤΑ, SPICY
-            ΣΩΣ, ΚΡΕΜΜΥΔΑΚΙ ΦΡΕΣΚΟ, ΣΟΥΣΑΜΙ, ΣΕΡΒΙΡΕΤΑΙ
-            ΜΕ ΣΑΛΑΤΑ</p>
-        <p class="price">10.00€</p>
-    </div>
-    <div class="dish">
-        <h3>HOT DOG</h3>
-        <p>SOFT BUN BRIOCHE, ΛΟΥΚΑΝΙΚΟ ΦΡΑΝΚΦΟΥΡΤΗΣ,
-            ΣΑΛΑΤΑ ΚΟΣΛΟΟΥ, ΚΑΡΑΜΕΛΩΜΕΝΑ ΚΡΕΜΜΥΔΙΑ,
-            ΠΙΚΑΝΤΙΚΗ ΣΩΣ</p>
-        <p class="price">6.50€</p>
+        <h3>ΚΟΤΟΜΠΟΥΚΙΕΣ</h3>
+        <p>ΧΕΙΡΟΠΟΙΗΤΟ ΚΟΤΟΠΟΥΛΟ ΠΑΝΕ, ΠΑΤΑΤΕΣ ΤΗΓΑΝΙΤΕΣ, ΣΑΛΑΤΑ & ΣΩΣ ΜΟΥΣΤΑΡΔΑ ΜΕΛΙ</p>
+        <p class="price">8.50€</p>
     </div>
 </section>
 <section id="pasta">
     <h2>ΖΥΜΑΡΙΚΑ</h2>
     <div class="dish">
-        <h3>ΛΙΓΚΟΥΙΝΙ ΜΕ ΓΑΡΙΔΕΣ</h3>
-        <p>ΓΑΡΙΔΕΣ, ΦΙΝΟΚΙΟ, ΚΟΚΚΙΝΗ & ΠΡΑΣΙΝΗ ΠΙΠΕΡΙΑ,
-            ΜΑΙΝΤΑΝΟΣ, ΛΑΙΜ, ΟΥΖΟ, ΣΑΛΤΣΑ ΜΠΙΣΚ &
-            ΝΤΟΜΑΤΑΣ, ΠΑΡΜΕΖΑΝΑ</p>
+        <h3>ΛΙΓΚΟΥΙΝΙ ΘΑΛΑΣΣΙΝΩΝ</h3>
+        <p>3 ΓΑΡΙΔΕΣ, 2 ΜΥΔΙΑ, ΣΑΛΤΣΑ ΦΡΕΣΚΙΑΣ ΝΤΟΜΑΤΑΣ, ΣΑΛΤΣΑ ΜΠΙΣΚ, ΒΑΣΙΛΙΚΟ</p>
         <p class="price">12.50€</p>
     </div>
     <div class="dish">
-        <h3>ΛΙΓΚΟΥΙΝΙ ΣΟΛΟΜΟΣ</h3>
-        <p>ΚΑΠΝΙΣΤΟΣ ΣΟΛΟΜΟΣ, ΚΟΚΚΙΝΗ & ΠΡΑΣΙΝΗ ΠΙΠΕΡΙΑ,
-            ΜΑΙΝΤΑΝΟΣ, ΛΑΙΜ, OUZO, ΚΡΕΜΑ ΓΑΛΑΚΤΟΣ,
-            ΠΑΡΜΕΖΑΝΑ</p>
+        <h3>ΛΙΓΚΟΥΙΝΙ ΣΟΛΟΜΟ</h3>
+        <p>ΚΑΠΝΙΣΤΟΣ ΣΟΛΟΜΟΣ, ΦΡΕΣΚΟ ΚΡΕΜΜΥΔΑΚΙ, ΑΝΗΘΟ, ΤΥΡΙ ΚΡΕΜΑ, ΒΟΤΚΑ, ΝΤΟΜΑΤΙΝΙΑ, ΧΥΜΟ ΛΑΙΜ</p>
         <p class="price">13.50€</p>
     </div>
     <div class="dish">
-        <h3>ΛΙΓΚΟΥΙΝΙ ΜΥΔΙΑ</h3>
-        <p>ΜΥΔΙΑ, ΔΥΟΣΜΟΣ, ΜΑΙΝΤΑΝΟΣ, ΣΑΛΤΣΑ ΒΟΥΤΥΡΟ &
-            ΛΕΜΟΝΙ</p>
-        <p class="price">11.00€</p>
+        <h3>ΣΠΑΓΓΕΤΙ ΠΕΣΤΟ ΒΑΣΙΛΙΚΟΥ</h3>
+        <p>ΧΕΙΡΟΠΟΙΗΤΟ ΠΕΣΤΟ ΒΑΣΙΛΙΚΟΥ, ΛΙΑΣΤΗ ΤΟΜΑΤΑ</p>
+        <p class="price">9.00€</p>
     </div>
     <div class="dish">
-        <h3>ΣΠΑΓΓΕΤΙ ΠΟΛΟ</h3>
-        <p>ΚΟΤΟΠΟΥΛΟ, ΜΑΝΙΤΑΡΙΑ, ΚΡΕΜΑ ΠΑΡΜΕΖΑΝΑΣ,
-            ΚΡΑΣΙ</p>
-        <p class="price">11.00€</p>
-    </div>
-    <div class="dish">
-        <h3>ΣΠΑΓΓΕΤΙ ITALIANO</h3>
-        <p>ΜΠΕΪΚΟΝ, ΝΤΟΜΑΤΙΝΙΑ, ΠΕΣΤΟ ΒΑΣΙΛΙΚΟΥ,
-            ΚΡΕΜΑ ΓΑΛΑΚΤΟΣ, ΠΑΡΜΕΖΑΝΑ</p>
+        <h3>ΣΠΑΓΓΕΤΙ ΚΑΡΜΠΟΝΑΡΑ</h3>
+        <p>ΜΠΕΙΚΟΝ, ΠΑΡΜΕΖΑΝΑ, ΑΥΓΟ, ΚΡΕΜΑ ΓΑΛΑΚΤΟΣ</p>
         <p class="price">9.50€</p>
     </div>
+    <div class="dish">
+        <h3>ΣΠΑΓΓΕΤΙ ΝΑΠΟΛΙ</h3>
+        <p>ΣΑΛΤΣΑ ΦΡΕΣΚΙΑΣ ΤΟΜΑΤΑΣ, ΒΑΣΙΛΙΚΟ</p>
+        <p class="price">7.00€</p>
+    </div>
+    <div class="dish">
+        <h3>ΝΙΟΚΙ ΜΕ ΓΚΟΡΓΚΟΝΤΖΟΛΑ</h3>
+        <p>ΝΙΟΚΙ ΠΑΤΑΤΑΣ, ΓΚΟΡΓΚΟΝΤΖΟΛΑ, ΚΡΕΜΑ ΓΑΛΑΚΤΟΣ, ΠΡΑΣΙΝΕΣ, ΚΟΚΚΙΝΕΣ ΠΙΠΕΡΙΕΣ</p>
+        <p class="price">10.00€</p>
+    </div>
 </section>
+
 <section id="risotto">
-    <h2>ΡΙΖΟΤΟ</h2>
+    <h2>ΡΙΖΟΤΟ / ΚΡΙΘΑΡΟΤΟ</h2>
     <div class="dish">
-        <h3>ΜΑΝΙΤΑΡΙΑ & ΛΑΔΙ ΤΡΟΥΦΑΣ</h3>
-        <p>ΜΑΝΙΤΑΡΙΑ ΑΣΠΡΑ, ΜΑΝΙΤΑΡΙΑ PORCINI,
-            ΚΡΕΜΑ ΜΑΝΙΤΑΡΙΩΝ,
-            ΠΑΡΜΕΖΑΝΑ & ΛΑΔΙ ΤΡΟΥΦΑΣ</p>
+        <h3>ΡΙΖΟΤΟ ΜΑΝΙΤΑΡΙΑ & ΛΑΔΙ ΤΡΟΥΦΑΣ</h3>
+        <p>ΜΑΝΙΤΑΡΙΑ ΛΕΥΚΑ, ΜΑΝΙΤΑΡΙΑ ΠΟΡΤΣΙΝΙ, ΚΡΕΜΑ ΜΑΝΙΤΑΡΙΩΝ, ΠΑΡΜΕΖΑΝΑ, ΛΑΔΙ ΤΡΟΥΦΑΣ</p>
+        <p class="price">12.00€</p>
+    </div>
+    <div class="dish">
+        <h3>ΡΙΖΟΤΟ ΜΙΛΑΝΕΖΕ</h3>
+        <p>ΦΙΛΕΤΟ ΚΟΤΟΠΟΥΛΟ, ΚΡΟΚΟ ΚΟΖΑΝΗΣ, ΚΡΕΜΜΥΔΙ</p>
         <p class="price">11.00€</p>
     </div>
     <div class="dish">
-        <h3>ΓΑΡΙΔΕΣ & ΠΑΝΤΖΑΡΙ</h3>
-        <p>ΓΑΡΙΔΕΣ, ΠΟΥΡΕΣ ΠΑΝΤΖΑΡΙ, ΚΥΒΟΥΣ ΠΑΝΤΖΑΡΙ,
-            ΠΑΡΜΕΖΑΝΑ, ΤΥΡΙ ΚΡΕΜΑ</p>
-        <p class="price">12.50€</p>
-    </div>
-    <div class="dish">
-        <h3>ΚΑΠΝΙΣΤΗ ΠΙΠΕΡΙΑ</h3>
-        <p>ΠΙΠΕΡΙΑ ΦΛΩΡΙΝΗΣ, ΣΑΛΤΣΑ ΣΠΑΝΑΚΙ & ΒΑΣΙΛΙΚΟ,
-            ΤΗΓΑΝΙΤΟ ΚΟΛΟΚΥΘΙ, ΣΕΛΕΡΙ, ΠΑΡΜΕΖΑΝΑ</p>
-        <p class="price">11.00€</p>
+        <h3>ΚΡΙΘΑΡΟΤΟ ΓΑΡΙΔΕΣ ΛΕΜΟΝΙ ΣΠΑΝΑΚΙ</h3>
+        <p>ΓΑΡΙΔΕΣ, ΚΡΕΜΑ ΓΑΛΑΚΤΟΣ, ΣΠΑΝΑΚΙ, ΧΥΜΟ ΛΕΜΟΝΙ, ΘΥΜΑΡΙ</p>
+        <p class="price">13.00€</p>
     </div>
 </section>
-<section id="pinsapizza">
-    <h2>ΠΙΝΣΑ/ΠΙΤΣΑ</h2>
+
+<section id="sandwiches">
+    <h2>ΑΜΦΙΨΩΜΑ / ΣΑΝΤΟΥΙΤΣ</h2>
+    <div class="dish">
+        <h3>BLACK ANGUS ΜΠΕΡΓΚΕΡ</h3>
+        <p>BLACK ANGUS ΚΙΜΑΣ, ΤΥΡΙ ΤΣΕΝΤΑΡ, ΜΠΕΙΚΟΝ, ΚΑΡΑΜΕΛΩΜΕΝΑ ΚΡΕΜΜΥΔΙΑ, ΝΤΟΜΑΤΑ, ΜΑΡΟΥΛΙ, ΧΕΙΡΟΠΟΙΗΤΕΣ ΠΙΚΛΕΣ, ΣΩΣ
+            ΜΠΑΡΜΠΕΚΙΟΥ, ΜΑΓΙΟΝΕΖΑ, ΨΩΜΑΚΙ ΜΠΡΙΟΣ, ΣΕΡΒΙΡΕΤΑΙ ΜΕ ΠΑΤΑΤΕΣ ΤΗΓΑΝΙΤΕΣ</p>
+        <p class="price">14.00€</p>
+    </div>
+    <div class="dish">
+        <h3>ΚΟΤΟΠΟΥΛΟ ΜΠΕΡΓΚΕΡ</h3>
+        <p>ΧΕΙΡΟΠΟΙΗΤΟ ΦΙΛΕΤΟ ΚΟΤΟΠΟΥΛΟ ΠΑΝΕ, ΤΥΡΙ ΤΣΕΝΤΑΡ, ΝΤΟΜΑΤΑ, ΜΑΡΟΥΛΙ, ΧΕΙΡΟΠΟΙΗΤΕΣ ΠΙΚΛΕΣ, ΣΩΣ ΜΟΥΣΤΑΡΔΑ
+            ΜΑΓΙΟΝΕΖΑ, ΨΩΜΑΚΙ ΜΠΡΙΟΣ, ΣΕΡΒΙΡΕΤΑΙ ΜΕ ΠΑΤΑΤΕΣ ΤΗΓΑΝΙΤΕΣ</p>
+        <p class="price">11.00€</p>
+    </div>
+    <div class="dish">
+        <h3>ΒΙΓΚΑΝ ΜΠΕΡΓΚΕΡ</h3>
+        <p>ΨΗΤΑ ΛΑΧΑΝΙΚΑ, ΒΙΓΚΑΝ ΤΥΡΙ, ΠΑΣΤΑ ΤΡΟΥΦΑΣ, ΨΩΜΑΚΙ</p>
+        <p class="price">10.00€</p>
+    </div>
+    <div class="dish">
+        <h3>ΚΛΑΜΠ ΣΑΝΤΟΥΙΤΣ</h3>
+        <p>ΤΥΡΙ, ΓΑΛΟΠΟΥΛΑ, ΝΤΟΜΑΤΑ, ΜΑΡΟΥΛΙ, ΜΠΕΙΚΟΝ, ΜΑΓΙΟΝΕΖΑ, ΣΕΡΒΙΡΕΤΑΙ ΜΕ ΠΑΤΑΤΕΣ ΤΗΓΑΝΙΤΕΣ</p>
+        <p class="price">8.00€</p>
+    </div>
+    <div class="dish">
+        <h3>ΚΛΑΜΠ ΣΑΝΤΟΥΙΤΣ ΚΟΤΟΠΟΥΛΟ</h3>
+        <p>ΦΙΛΕΤΟ ΚΟΤΟΠΟΥΛΟ ΨΗΤΟ, ΤΥΡΙ, ΝΤΟΜΑΤΑ, ΜΑΡΟΥΛΙ, ΜΠΕΙΚΟΝ, ΜΑΓΙΟΝΕΖΑ, ΣΕΡΒΙΡΕΤΑΙ ΜΕ ΠΑΤΑΤΕΣ ΤΗΓΑΝΙΤΕΣ</p>
+        <p class="price">10.00€</p>
+    </div>
+</section>
+
+<section id="bao-buns">
+    <h2>BAO BUNS</h2>
+    <div class="dish">
+        <h3>ΚΟΤΟΠΟΥΛΟ</h3>
+        <p>ΧΕΙΡΟΠΟΙΗΤΟ ΚΟΤΟΠΟΥΛΟ ΠΑΝΕ, ΠΙΚΛΑ ΑΓΓΟΥΡΙ, ΚΡΕΜΜΥΔΙ, ΣΕΛΕΡΙ, ΜΑΓΙΟΝΕΖΑ ΚΑΠΝΙΣΤΗΣ ΠΙΠΕΡΙΑΣ</p>
+        <p class="price">7.50€</p>
+    </div>
+    <div class="dish">
+        <h3>ΓΑΡΙΔΑ</h3>
+        <p>ΓΑΡΙΔΑ ΠΑΝΕ, ΜΑΝΓΚΟ, ΑΒΟΚΑΝΤΟ, ΚΡΕΜΜΥΔΙ, ΛΑΙΜ, ΜΑΓΙΟΝΕΖΑ CHILLIE</p>
+        <p class="price">8.50€</p>
+    </div>
+</section>
+
+<section id="pizza">
+    <h2>ΠΙΝΣΑ / ΠΙΤΣΑ</h2>
     <div class="dish">
         <h3>ΜΟΤΣΑΡΕΛΑ</h3>
         <p>ΜΟΤΣΑΡΕΛΑ, ΣΑΛΤΣΑ ΝΤΟΜΑΤΑΣ</p>
-        <p class="price">8.50€/12.00€</p>
+        <p class="price">8.00€ / 12.00€</p>
     </div>
     <div class="dish">
         <h3>ΠΡΟΣΟΥΤΟ</h3>
-        <p>ΠΡΟΣΟΥΤΟ, ΜΟΤΣΑΡΕΛΑ, ΡΟΚΑ, ΠΑΡΜΕΖΑΝΑ,
-            ΣΑΛΤΣΑ ΝΤΟΜΑΤΑΣ</p>
-        <p class="price">9.50€/15.50€</p>
-    </div>
-    <div class="dish">
-        <h3>ΠΟΛΟ</h3>
-        <p>ΚΟΤΟΠΟΥΛΟ, ΜΟΤΖΑΡΕΛΑ, ΣΑΛΤΣΑ ΠΑΡΜΕΖΑΝΑΣ,
-            ΜΑΝΙΤΑΡΙΑ, ΤΥΡΙ ΚΡΕΜΑ</p>
-        <p class="price">9.00€/14.50€</p>
+        <p>ΠΡΟΣΟΥΤΟ, ΜΟΤΣΑΡΕΛΑ, ΡΟΚΑ, ΠΑΡΜΕΖΑΝΑ, ΣΑΛΤΣΑ ΝΤΟΜΑΤΑΣ</p>
+        <p class="price">9.00€ / 15.00€</p>
     </div>
     <div class="dish">
         <h3>ΜΑΝΙΤΑΡΙΑ & ΛΑΔΙ ΤΡΟΥΦΑΣ</h3>
-        <p>ΚΡΕΜΑ ΜΑΝΙΤΑΡΙΩΝ, ΜΑΝΙΤΑΡΙΑ,
-            ΜΟΤΣΑΡΕΛΑ, ΠΑΡΜΕΖΑΝΑ,
-            ΛΑΔΙ ΤΡΟΥΦΑΣ</p>
-        <p class="price">9.00€/14.50€</p>
+        <p>ΚΡΕΜΑ ΜΑΝΙΤΑΡΙΩΝ, ΜΑΝΙΤΑΡΙΑ, ΜΟΤΣΑΡΕΛΑ, ΝΙΦΑΔΕΣ ΠΑΡΜΕΖΑΝΑΣ, ΛΑΔΙ ΤΡΟΥΦΑΣ</p>
+        <p class="price">9.00€ / 14.50€</p>
     </div>
     <div class="dish">
         <h3>ΜΠΕΙΚΟΝ ΠΙΠΕΡΙΑ</h3>
-        <p>ΜΠΕΙΚΟΝ, ΤΥΡΙ ΓΚΟΥΝΤΑ, ΠΙΠΕΡΙΑ, ΣΑΛΤΣΑ ΝΤΟΜΑΤΑΣ</p>
-        <p class="price">8.50€/13.00€</p>
+        <p>ΜΠΕΙΚΟΝ, ΤΥΡΙ ΓΚΟΥΝΤΑ, ΚΟΚΚΙΝΕΣ & ΠΡΑΣΙΝΕΣ ΠΙΠΕΡΙΕΣ, ΣΑΛΤΣΑ ΝΤΟΜΑΤΑΣ</p>
+        <p class="price">8.50€ / 13.00€</p>
     </div>
     <div class="dish">
         <h3>DIAVOLA</h3>
-        <p>ΠΙΚΑΝΤΙΚΗ ΣΑΛΤΣΑ ΝΤΟΜΑΤΑΣ, ΓΚΟΥΝΤΑ, ΜΠΕΙΚΟΝ,
-            ΠΕΠΕΡΟΝΙ</p>
-        <p class="price">8.50€/13.00€</p>
-    </div>
-    <div class="dish">
-        <h3>ΜΟΡΤΑΔΕΛΑ-ΦΥΣΤΙΚΙ</h3>
-        <p>ΠΕΣΤΟ ΦΥΣΤΙΚΙΟΥ, ΜΟΤΣΑΡΕΛΑ, ΜΟΡΤΑΔΕΛΑ,
-            ΤΥΡΙ ΚΡΕΜΑ, ΦΥΣΤΙΚΙ</p>
-        <p class="price">9.00€/14.50€</p>
+        <p>ΠΙΚΑΝΤΙΚΗ ΣΑΛΤΣΑ ΝΤΟΜΑΤΑΣ, ΤΥΡΙ ΓΚΟΥΝΤΑ, ΜΠΕΙΚΟΝ, ΠΕΠΕΡΟΝΙ</p>
+        <p class="price">8.50€ / 13.00€</p>
     </div>
 </section>
-<section id="kismenu">
-    <h2>ΠΑΙΔΙΚΟ ΜΕΝΟΥ</h2>
-    <div class="dish">
-        <h3>ΣΠΑΓΓΕΤΙ ΝΑΠΟΛΙΤΑΝΑ</h3>
-        <p class="price">6.00€</p>
-    </div>
-    <div class="dish">
-        <h3>ΧΕΙΡΟΠΟΙΗΤΟ ΚΟΤΟΠΟΥΛΟ ΠΑΝΕ ΜΕ ΣΩΣ & ΠΑΤΑΤΕΣ</h3>
-        <p class="price">8.00€</p>
-    </div>
-</section>
+
 <section id="desserts">
     <h2>ΓΛΥΚΑ</h2>
     <div class="dish">
@@ -427,11 +454,7 @@
         <p class="price">4.50€</p>
     </div>
     <div class="dish">
-        <h3>ΤΙΡΑΜΙΣΟΥ</h3>
-        <p class="price">5.50€</p>
-    </div>
-    <div class="dish">
-        <h3>ΜΙΛΦΕΙΓ</h3>
+        <h3>ΜΙΛΦΕΪΓ</h3>
         <p class="price">5.50€</p>
     </div>
     <div class="dish">
@@ -440,18 +463,16 @@
     </div>
     <div class="dish">
         <h3>ΒΑΦΛΕΣ</h3>
-        <p>ΜΕ ΠΡΑΛΙΝΑ ΦΟΥΝΤΟΥΚΙ/LILA PAUSE/BUENO/ΦΥΣΤΙΚΙ</p>
+        <p>ΠΡΑΛΙΝΑ ΦΟΥΝΤΟΥΚΙ, ΜΠΙΣΚΟΤΟ, ΣΙΡΟΠΙ ΣΟΚΟΛΑΤΑΣ</p>
         <p class="price">5.00€</p>
     </div>
     <div class="dish">
-        <h3>ΒΑΦΛΑ ΣΠΕΣΙΑΛ</h3>
-        <p class="price">5.50€</p>
-    </div>
-    <div class="dish">
         <h3>ΜΠΑΛΑ ΠΑΓΩΤΟ</h3>
-        <p class="price">2.00€</p>
+        <p class="price">2.50€</p>
     </div>
 </section>
+
+
 <section id="coffee">
     <h2>ΚΑΦΕΔΕΣ</h2>
     <div class="dish">
@@ -565,14 +586,14 @@
         <p class="price">3.50€</p>
     </div>
     <div class="dish">
-        <h3>ΝΕΡΟ  0,5L / 1,5L</h3>
+        <h3>ΝΕΡΟ 0,5L / 1,5L</h3>
         <p class="price">0.50€ / 1.00€</p>
     </div>
 </section>
 <section id="beers">
     <h2>ΜΠΥΡΕΣ</h2>
     <div class="dish">
-        <h3>ΙΚΑΡΙΩΤΙΣΣΑ  0.33L / 0.5L</h3>
+        <h3>ΙΚΑΡΙΩΤΙΣΣΑ 0.33L / 0.5L</h3>
         <p class="price">5.50€ / 6.50€</p>
     </div>
     <div class="dish">
@@ -802,5 +823,18 @@
 
 
 </section>
+
 </body>
+
+<script>
+    const toggleBtn = document.getElementById('toggle-nav');
+    const nav = document.getElementById('navbar');
+
+    toggleBtn.addEventListener('click', () => {
+        nav.classList.toggle('collapsed');
+        toggleBtn.textContent = nav.classList.contains('collapsed') ? '☰' : '✕';
+    });
+</script>
+
+
 </html>
